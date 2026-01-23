@@ -5,6 +5,7 @@
   <title>Projects | Dallas Brown</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -12,29 +13,99 @@
   <h2 class="logo">Dallas Brown</h2>
   <div>
     <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
+    <a href="projects.html" class="active">Projects</a>
     <a href="resume.html">Resume</a>
   </div>
 </nav>
 
-<section class="container">
-  <h1>Data Analytics Projects</h1>
+<section class="container project-detail">
+  <h1>Data Analytics Case Studies</h1>
 
-  <div class="project-card">
-    <h3>Supply Chain Risk & Performance Analytics Platform<h3>
-    <p><strong>Problem:</strong> Identify drivers of shipment delays.</p>
-    <p><strong>Data:</strong> Public logistics data (2021–2024)</p>
-    <p><strong>Insight:</strong> Built Tableau dashboards analyzing 3 years of logistics and supply chain operations data to evaluate delivery risk, cost drivers, and
-operational efficiency. </p>
-    <p class="tools">SQL • Tableau<p>
-    <a href="#">View Analysis</a>
-  </div>
+  <article class="case-study">
+    <header class="case-header">
+        <h2>Global Logistics Intelligence & Predictive Pipeline</h2>
+        <p class="case-subtitle">End-to-End Analytics: SQL ETL & Tableau Predictive Modeling</p>
+        <div class="project-links">
+            <a href="https://public.tableau.com/views/SupplyChainLogisticsAnalysis/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="btn-small"><i class="fas fa-chart-line"></i> Interactive Dashboard</a>
+            <a href="https://github.com/dallasb6974.github.io/projects.html" target="_blank" class="btn-small"><i class="fab fa-github"></i> View SQL Scripts</a>
+        </div>
+    </header>
+
+    <div class="case-grid">
+        <div class="case-section">
+            <h3><i class="fas fa-bullseye"></i> Business Challenge</h3>
+            <p>
+                Fragmented data across customer, shipment, and logistics datasets made it impossible for executive leadership to visualize the correlation between operational efficiency and the bottom line. The goal was to consolidate 56,000+ shipment records and 750 customer accounts into a predictive tool to manage an <strong>$11.36M revenue stream</strong>.
+            </p>
+        </div>
+
+        <div class="case-section">
+            <h3><i class="fas fa-laptop-code"></i> Technical Execution</h3>
+            <ul>
+                <li><strong>Data Engineering:</strong> Used SQL (PostgreSQL) to perform complex joins and CTEs, transforming raw CSV data into a clean, relational schema.</li>
+                <li><strong>BI Visualization:</strong> Authored Level of Detail (LOD) expressions in Tableau to calculate critical KPIs like Support Ticket Ratios and ROI.</li>
+                <li><strong>Predictive Analytics:</strong> Built a 3-year forecasting model to project revenue and support demand through 2029.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="case-visuals">
+        <h3><i class="fas fa-image"></i> Executive Summary Dashboard</h3>
+        <div class="dashboard-placeholder">
+            <img src="dashboard-screenshot.png" alt="Tableau Executive Summary Dashboard" class="img-responsive">
+            <p class="caption">The central dashboard provides a high-level view of $11.3M in revenue, with sparklines indicating a 17.2:1 ROI on acquisition spend.</p>
+        </div>
+    </div>
+
+    <div class="case-section sql-showcase">
+        <h3><i class="fas fa-code"></i> Deep Dive: Identifying Operational Thresholds</h3>
+        <p>Using the following SQL query, I identified a critical "breaking point" where warehouse utilization caused nonlinear spikes in shipment delays:</p>
+        <pre><code>
+-- Identifying 'Critical' capacity statuses in Asia-Pacific
+SELECT 
+    date, 
+    region, 
+    warehouse_utilization_percent, 
+    delay_hours_avg,
+    CASE 
+        WHEN warehouse_utilization_percent > 90 THEN 'Critical'
+        ELSE 'Normal'
+    END AS status
+FROM logistics_performance
+WHERE region = 'Asia-Pacific' 
+AND delay_hours_avg > 4.0
+ORDER BY warehouse_utilization_percent DESC;
+        </code></pre>
+        <p class="insight-note"><strong>Discovery:</strong> When utilization hit 91%, delays consistently spiked to 5.0 hours, leading to a direct increase in support volume.</p>
+    </div>
+
+    <div class="case-results">
+        <h3><i class="fas fa-trophy"></i> Business Impact & Key Results</h3>
+        <div class="results-grid">
+            <div class="result-item">
+                <span class="result-num">17.2:1</span>
+                <p>Calculated ROI per Marketing Dollar</p>
+            </div>
+            <div class="result-item">
+                <span class="result-num">0.42%</span>
+                <p>Global Damage Claim Rate (Best-in-Class)</p>
+            </div>
+            <div class="result-item">
+                <span class="result-num">36.4%</span>
+                <p>Revenue concentrated in APAC growth zone</p>
+            </div>
+        </div>
+    </div>
+  </article>
 
 </section>
 
 <footer class="footer">
-  <p>© 2026 Dallas Brown</p>
+  <p>© 2026 Dallas Brown • Information Systems Portfolio</p>
 </footer>
+
+</body>
+</html>
 
 </body>
 </html>
