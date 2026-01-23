@@ -2,59 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dallas Brown | Information Systems Student at UT Arlington </title>
+  <title>Dallas Brown | Information Systems & Data Analytics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
 <header class="container">
   <nav class="nav">
     <h2 class="logo">Dallas Brown</h2>
-    <div>
+    <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="resume.html">Resume</a>
+      <a href="https://www.linkedin.com/in/dallas-brown14/" target="_blank" class="linkedin-icon"><i class="fab fa-linkedin"></i></a>
     </div>
   </nav>
 
-  <section class="hero">
-    <h1> Summary </h1>
-    <p>
-     Analytical Information Systems student with hands-on experience at Blue Yonder and Collins Aerospace, leveraging SQL, Excel, and data visualization tools (Power BI, Tableau) to analyze complex datasets, enhance project tracking, optimize operational processes, and support data-driven decision-making. Experienced in building interactive dashboards, automating reporting workflows, and translating business and technical requirements into actionable insights using cloud and DevOps-based tools. Seeking an internship to contribute analytical thinking, technical skills, and cross-functional collaboration in a fast-paced environment.
-    </p>
-    <a class="btn" href="projects.html">View Projects</a>
+  <section class="hero-split">
+    <div class="hero-image">
+      <img src="headshot.jpg" alt="Dallas Brown Headshot" class="profile-img">
+    </div>
+    <div class="hero-text">
+      <h1>Information Systems Professional</h1>
+      <p>
+        Student at UT Arlington with hands-on experience at <strong>Blue Yonder</strong> and <strong>Collins Aerospace</strong>. 
+        I leverage SQL, Excel, and visualization tools like Power BI and Tableau to optimize operational processes and support data-driven decision-making. 
+        I specialize in building interactive dashboards and translating technical requirements into actionable business insights.
+      </p>
+      <div class="hero-cta">
+        <a class="btn" href="projects.html">View All Projects</a>
+        <a class="btn-secondary" href="https://linkedin.com/in/your-profile" target="_blank">Connect on LinkedIn</a>
+      </div>
+    </div>
   </section>
 </header>
 
 <section class="container">
-  <h2>Core Skills</h2>
+  <h2>Technical Toolkit</h2>
   <div class="skills">
-    <span>SQL</span>
+    <span>SQL (ETL & Joins)</span>
+    <span>Tableau & Power BI</span>
+    <span>Data Modeling</span>
     <span>Python</span>
-    <span>Power BI</span>
-    <span>Excel</span>
-    <span>Data Visualization</span>
-    <span>Business Analysis</span>
+    <span>Advanced Excel</span>
+    <span>Cloud & DevOps Tools</span>
   </div>
 </section>
 
-<section class="container">
-  <h2>Featured Project</h2>
-  <div class="project-card">
-    <h3>Supply Chain Delay Analysis</h3>
-    <p>
-      Analyzed logistics data from Southern California to identify delay drivers
-      and operational bottlenecks.
-    </p>
-    <p class="tools">SQL • Tableau</p>
-    <a href="projects.html" →</a>
+<section class="container" id="projects">
+  <h2>Project Gallery</h2>
+  <div class="project-grid">
+    
+    <div class="project-card featured">
+      <div class="card-tag">Featured</div>
+      <h3>Predictive Logistics Pipeline</h3>
+      <p>
+        Integrated three relational datasets to analyze <strong>$11.36M in revenue</strong> and 56,000+ shipments. 
+        Engineered a Tableau dashboard pinpointing a <strong>91% warehouse utilization threshold</strong> and forecasted growth through 2029.
+      </p>
+      <div class="project-stats">
+          <span><strong>17.2:1</strong> ROI</span>
+          <span><strong>0.42%</strong> Damage Rate</span>
+          <span><strong>448</strong> Tickets</span>
+      </div>
+      <p class="tools">SQL • Tableau • Analytics</p>
+      <a href="projects.html" class="btn-small">View Case Study →</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Project Two Title</h3>
+      <p>Brief description of your second analytical project, focusing on the problem solved and the tools used.</p>
+      <p class="tools">Power BI • Excel</p>
+      <a href="#" class="btn-link">Coming Soon</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Project Three Title</h3>
+      <p>Brief description of your third analytical project. Highlighting versatility across different industries.</p>
+      <p class="tools">Python • SQL</p>
+      <a href="#" class="btn-link">Coming Soon</a>
+    </div>
+
   </div>
 </section>
 
 <footer class="footer">
-  <p>© 2026 Dallas Brown • Data Analytics Portfolio</p>
+  <div class="container">
+    <p>© 2026 Dallas Brown • Information Systems | UT Arlington</p>
+    <div class="footer-links">
+        <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a> • 
+        <a href="mailto:your-email@uta.edu">Email</a>
+    </div>
+  </div>
 </footer>
+
+</body>
+</html>
 
 </body>
 </html>
