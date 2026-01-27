@@ -118,3 +118,76 @@ body {
   border-top: 1px solid #e2e8f0;
   color: #94a3b8;
 }
+/* Projects Page Specific Enhancements */
+.project-page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.case-header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 20px;
+}
+
+.case-list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.case-list li {
+    margin-bottom: 10px;
+}
+
+/* SQL Code Block Styling */
+.sql-box {
+    background: #1e293b;
+    color: #f8fafc;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.sql-box h3 { color: #38bdf8; }
+
+pre {
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    color: #e2e8f0;
+    border: 1px solid #334155;
+}
+
+.insight-pill {
+    background: rgba(56, 189, 248, 0.1);
+    border-left: 4px solid #38bdf8;
+    padding: 15px;
+    margin-top: 20px;
+    color: #e2e8f0;
+}
+
+/* Results Grid */
+.results-grid {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.result-num {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0077cc;
+}
+
+.result-item p {
+    margin: 0;
+    font-weight: 600;
+    color: #64748b;
+}
