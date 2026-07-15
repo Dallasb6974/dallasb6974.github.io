@@ -1,86 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dallas Brown | Information Systems & Data Analytics</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dallas Brown is an Information Systems student and early-career analytics professional focused on dashboards, data, and project execution.">
+  <meta name="theme-color" content="#f7f8f5">
+  <meta property="og:title" content="Dallas Brown | Analytics & Information Systems">
+  <meta property="og:description" content="Data, technology, and project execution turned into clear business results.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Headshot.jpg">
+  <title>Dallas Brown | Analytics & Information Systems</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2314281f'/%3E%3Ctext x='50' y='67' text-anchor='middle' font-family='Arial' font-weight='700' font-size='48' fill='%23d9ff63'%3EDB%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
-<header class="container">
-  <nav class="nav">
-    <h2 class="logo">Dallas Brown</h2>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.html">Resume</a>
-      <a href="https://www.linkedin.com/in/dallas-brown14/" target="_blank" class="linkedin-icon"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </nav>
-
-  <section class="hero">
-    <img src="Headshot.jpg" alt="Dallas Brown Headshot" class="headshot">
-    <div class="hero-text">
-      <h1>Information Systems Student</h1>
-      <p>
-        Student at UT Arlington with hands-on experience at <strong>Blue Yonder</strong> and <strong>Collins Aerospace</strong>. 
-        I leverage SQL, Excel, and visualization tools like Power BI and Tableau to translate technical requirements into actionable business insights.
-      </p>
-      <div class="hero-cta">
-        <a class="btn" href="projects.html">View Case Studies</a>
-        <a class="btn btn-secondary" href="https://www.linkedin.com/in/dallas-brown14/" target="_blank">LinkedIn Profile</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Dallas Brown home"><span>DB</span> Dallas Brown</a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
       </div>
-    </div>
-  </section>
-</header>
+      <div class="nav-actions"><button class="theme-toggle" aria-label="Switch color theme" title="Switch color theme">◐</button><a class="nav-resume" href="Dallas R. Brown Resume - IS 26'.pdf" target="_blank" rel="noopener">Resume ↗</a></div>
+    </nav>
+  </header>
 
-<section class="container">
-  <h2 class="section-title">Technical Expertise</h2>
-  <div class="skills">
-    <span>SQL (ETL & Joins)</span>
-    <span>Tableau & Power BI</span>
-    <span>Data Modeling</span>
-    <span>Python</span>
-    <span>Advanced Excel</span>
-    <span>PostgreSQL</span>
-  </div>
-</section>
-
-<section class="container" id="projects">
-  <h2 class="section-title">Featured Project</h2>
-  
-  <div class="project-card">
-    <div class="project-info">
-      <div class="card-tag">SQL + TABLEAU</div>
-      <h3>Predictive Logistics Pipeline</h3>
-      <p>
-        Integrated three relational datasets to analyze <strong>$11.36M in revenue</strong> and 56,000+ shipments. 
-        Engineered a dashboard pinpointing a <strong>91% warehouse utilization threshold</strong>.
-      </p>
-      <div class="project-stats">
-          <span><strong>17.2:1</strong> ROI</span>
-          <span><strong>0.42%</strong> Damage Rate</span>
+  <main id="main">
+    <section class="hero shell" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Information Systems · UT Arlington</p>
+        <h1>Data, technology, and <em>project execution</em> turned into clear business results.</h1>
+        <p class="hero-lede">I’m Dallas Brown, an early-career analytics professional who builds dashboards, improves reporting workflows, and helps teams make confident, data-informed decisions.</p>
+        <div class="hero-ctas"><a class="button button-primary" href="#projects">View my work <b>↓</b></a><a class="button button-quiet" href="Dallas R. Brown Resume - IS 26'.pdf" target="_blank" rel="noopener">Download resume</a></div>
+        <div class="socials"><a href="https://www.linkedin.com/in/dallas-brown14/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/Dallasb6974" target="_blank" rel="noopener">GitHub ↗</a><a href="mailto:Dallasbrown553@gmail.com">Email ↗</a></div>
       </div>
-      <a href="projects.html" class="btn">Full Case Study</a>
-    </div>
-    <img src="dashboard-screenshot.png" class="dashboard-img" alt="Logistics Dashboard Overview">
-  </div>
-</section>
+      <div class="hero-visual reveal" aria-label="Portrait of Dallas Brown">
+        <div class="hero-grid" aria-hidden="true"></div><div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+        <img src="Headshot.jpg" alt="Dallas Brown smiling outdoors" fetchpriority="high">
+        <div class="availability"><span></span> Building at the intersection of<br>analytics and operations</div>
+      </div>
+    </section>
 
-<footer class="footer">
-  <div class="container">
-    <p>© 2026 Dallas Brown • Information Systems | UT Arlington</p>
-    <div class="footer-links">
-        <a href="https://www.linkedin.com/in/dallas-brown14/" target="_blank"><i class="fab fa-linkedin"></i></a> • 
-        <a href="mailto:your-email@uta.edu"><i class="fas fa-envelope"></i></a>
-    </div>
-  </div>
-</footer>
+    <section class="metrics shell reveal" aria-label="Career highlights">
+      <div><strong>5</strong><span>internship experiences</span></div><div><strong>4</strong><span>industries explored</span></div><div><strong>2nd</strong><span>place, Microsoft hackathon</span></div><div><strong>2027</strong><span>expected graduation</span></div>
+    </section>
 
-</body>
-</html>
+    <section class="section shell" id="about">
+      <div class="section-intro reveal"><p class="eyebrow">01 · About</p><h2>A practical approach to <em>better decisions.</em></h2></div>
+      <div class="about-layout reveal"><div><p class="large-copy">I am an Information Systems student at the University of Texas at Arlington with experience spanning cloud infrastructure, supply chain, aerospace, and media intelligence.</p><p>My strongest work lives where business questions meet useful data: translating requirements, validating sources, shaping clear reporting, and collaborating across technical and operational teams.</p></div><aside class="fact-card"><p>Currently focused on</p><ul><li>Dashboard & KPI design</li><li>Data quality & reporting workflows</li><li>AI-enabled process automation</li><li>Business intelligence & analytics</li></ul><small>Based in Dallas, Texas</small></aside></div>
+    </section>
 
+    <section class="section experience-section" id="experience">
+      <div class="shell"><div class="section-intro reveal"><p class="eyebrow">02 · Experience</p><h2>Learning fast, <em>shipping thoughtfully.</em></h2><p>Click an experience to see the work behind the title.</p></div>
+      <div class="timeline">
+        <details class="experience reveal" open><summary><span class="experience-date">2026 — Present</span><span><b>Microsoft</b><strong>Project Management Intern · CO+I Lease Planning</strong></span><i>+</i></summary><div class="experience-body"><p>Redmond, WA</p><ul><li>Developed Power BI dashboards and data models for the AMERS lease portfolio, improving visibility into compliance, milestone variance, schedule health, and readiness reporting.</li><li>Documented reporting workflows, identified data-quality issues, and established validation controls to improve accuracy and consistency.</li><li>Prototyped AI-powered automation to streamline reporting workflows and issue identification.</li></ul><div class="tags"><span>Power BI</span><span>Data Quality</span><span>Process Improvement</span><span>AI Automation</span></div></div></details>
+        <details class="experience reveal"><summary><span class="experience-date">2025 — 2026</span><span><b>Blue Yonder</b><strong>Edge Data Analytics Intern</strong></span><i>+</i></summary><div class="experience-body"><p>Dallas, TX</p><ul><li>Developed a strategic Power BI dashboard that gave sales teams visibility into historical order trends, customer behavior, and SKU-level insights.</li><li>Built DAX measures to track spend, order-volume trends, months since purchase, and potential demand.</li><li>Designed slicers, conditional formatting, and drill-through paths for clearer executive use.</li></ul><div class="tags"><span>Power BI</span><span>DAX</span><span>Sales Analytics</span></div></div></details>
+        <details class="experience reveal"><summary><span class="experience-date">2024</span><span><b>Collins Aerospace</b><strong>Enterprise Supplier Quality Engineer Intern</strong></span><i>+</i></summary><div class="experience-body"><p>Houston, TX</p><ul><li>Improved supplier-quality tracking with data-driven project reporting.</li><li>Built reference files and Power Query connections to streamline data checks and support risk and budget tracking.</li></ul><div class="tags"><span>Excel</span><span>Power Query</span><span>Quality</span></div></div></details>
+        <details class="experience reveal"><summary><span class="experience-date">2023</span><span><b>Collins Aerospace</b><strong>Aerostructures Project Engineer Intern</strong></span><i>+</i></summary><div class="experience-body"><p>Chula Vista, CA</p><ul><li>Supported cross-functional efforts to improve aircraft-production processes and DevOps board workflows.</li><li>Learned stress-analysis and structural-design practices while supporting critical aerospace evaluations.</li></ul><div class="tags"><span>Project Engineering</span><span>DevOps</span><span>Operations</span></div></div></details>
+        <details class="experience reveal"><summary><span class="experience-date">2022</span><span><b>Aviation Week Network</b><strong>Data Intelligence Intern</strong></span><i>+</i></summary><div class="experience-body"><p>Washington, DC</p><ul><li>Researched industry trends and analyzed data from more than 300 aerospace companies for a global intelligence database.</li><li>Interviewed aerospace engineers and contributed research-based articles for a global audience.</li></ul><div class="tags"><span>Research</span><span>Data Analysis</span><span>Aerospace</span></div></div></details>
+      </div></div>
+    </section>
+
+    <section class="section shell" id="projects">
+      <div class="section-intro reveal"><p class="eyebrow">03 · Selected work</p><h2>Ideas made <em>useful.</em></h2><p>Two projects that reflect how I think about people, data, and delivery.</p></div>
+      <div class="project-filters reveal" role="group" aria-label="Project filters"><button class="active" data-filter="all">All work</button><button data-filter="product">Product development</button><button data-filter="analytics">Data & analytics</button><button data-filter="project">Project management</button></div>
+      <div class="projects-grid">
+        <article class="project project-featured reveal" data-categories="product analytics"><div class="project-art habit-art" aria-hidden="true"><div class="phone"><div class="phone-top"></div><p>Good evening, Dallas</p><h3>4 of 5</h3><small>daily habits complete</small><div class="habit-bars"><i></i><i></i><i></i><i></i><i></i></div><div class="mini-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div><span class="nfc">NFC</span></div><div class="project-content"><p class="project-number">01 / PRODUCT DEVELOPMENT</p><h3>HabitFlow</h3><p class="project-summary">A full-stack, NFC-powered habit tracker that makes personal logging fast while turning everyday activity into clear, mobile-friendly insights.</p><div class="tags"><span>FastAPI</span><span>SQLite</span><span>JavaScript</span><span>PWA</span></div><details class="case-study"><summary>View case study <b>+</b></summary><div><h4>The challenge</h4><p>Make habit logging low-friction while giving users a useful view of progress, patterns, and goals.</p><h4>The solution</h4><p>Built a FastAPI and SQLite backend with authentication, event history, NFC-friendly logging, export/import, and a mobile-first PWA dashboard. The dashboard includes trends, charts, heatmaps, streaks, activity calendars, and goal tracking.</p><h4>What I learned</h4><p>How to connect product thinking, lightweight automation, and analytics in one practical app.</p></div></details><a class="text-link" href="https://github.com/DallasBrown14/Project" target="_blank" rel="noopener">View repository ↗</a></div></article>
+        <article class="project lyfe-project reveal" data-categories="product project"><div class="project-content"><p class="project-number">02 / PROJECT MANAGEMENT</p><h3>Lyfe</h3><p class="project-summary">An AI-powered symptom capture and provider handoff concept built during the Microsoft Intern Hackathon 2026.</p><div class="place-badge">2<sup>nd</sup><span>place</span></div><div class="tags"><span>AI Product</span><span>Figma</span><span>GitHub</span><span>Team Delivery</span></div><details class="case-study"><summary>View case study <b>+</b></summary><div><h4>My role</h4><p>Project manager for a four-person team. I owned scope, priorities, and delivery for a working demo and investor-ready pitch in three days.</p><h4>What we built</h4><p>Patient and provider-facing concepts for AI chat, voice and photo capture, symptom logging, and a connected handoff flow. I also supported integration testing through GitHub and VS Code.</p><h4>Outcome</h4><p>Our team earned 2nd place at the Microsoft Intern Hackathon 2026.</p></div></details></div><div class="lyfe-art" aria-hidden="true"><span class="pulse one"></span><span class="pulse two"></span><div class="lyfe-card"><small>Lyfe</small><b>How are you feeling?</b><div class="wave"></div><em>Capture. Understand. Hand off.</em></div></div></article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills"><div class="shell"><div class="section-intro reveal"><p class="eyebrow">04 · Toolkit</p><h2>Equal parts <em>analysis and action.</em></h2></div><div class="skill-grid reveal"><article><p>Analytics & BI</p><h3>Turning data into a story people can use.</h3><div class="tags"><span>Power BI</span><span>Tableau</span><span>SQL</span><span>Excel</span><span>Power Query</span><span>DAX</span><span>Dashboard Development</span><span>KPI Design</span><span>Data Visualization</span></div></article><article><p>Technology</p><h3>Building reliable, practical solutions.</h3><div class="tags"><span>Python</span><span>Git & GitHub</span><span>Azure DevOps</span><span>HTML/CSS</span><span>JavaScript</span><span>FastAPI</span><span>SQLite</span><span>AI Agent Development</span></div></article><article><p>Business & Delivery</p><h3>Keeping teams aligned around the work that matters.</h3><div class="tags"><span>Project Management</span><span>Risk Management</span><span>Requirements Gathering</span><span>Process Improvement</span><span>Data Quality</span><span>Strategic Analysis</span><span>Collaboration</span></div></article></div></div></section>
+
+    <section class="section shell education"><div class="education-card reveal"><p class="eyebrow">05 · Education</p><h2>University of Texas at Arlington</h2><p><strong>B.S. Information Systems</strong> · Aug 2024 — Spring 2027</p><p>Building a foundation in systems, analytics, business process design, and technology-enabled decision-making.</p><div class="scholars">INROADS Leadership Development Program Scholar · UNCF–Kia America STEAM Scholar · TMCF Stephen Fienberg Scholar · Cognizant Foundation Scholar</div></div><div class="exploring reveal"><p class="eyebrow">Currently exploring</p><ul><li>AI-powered productivity tools</li><li>NFC and voice-based experiences</li><li>Analytics that make work simpler</li><li>Emerging technology and startups</li></ul></div></section>
+
+    <section class="contact" id="contact"><div class="shell contact-inner reveal"><p class="eyebrow">06 · Let’s connect</p><h2>Have a problem worth <em>solving?</em></h2><p>I’m always open to connecting with people building thoughtful products, smarter operations, and better decisions.</p><div class="hero-ctas"><a class="button button-primary" href="mailto:Dallasbrown553@gmail.com">Send an email <b>↗</b></a><a class="button button-quiet" href="https://www.linkedin.com/in/dallas-brown14/" target="_blank" rel="noopener">Connect on LinkedIn</a></div></div></section>
+  </main>
+  <footer><div class="shell footer-inner"><a class="brand" href="#home"><span>DB</span> Dallas Brown</a><p>Designed and built by Dallas Brown · <span id="year"></span></p><button class="back-top" aria-label="Back to top">↑</button></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
